@@ -76,7 +76,6 @@ a{
 }
 .toggle-btn::after{
     top: 16px;
-    height: 9%;
 }   
 #toggle:checked ~ label span::before,#toggle:checked ~ label span::after{
     left: 19.5%;
@@ -84,7 +83,6 @@ a{
     transform: rotate(-45deg);
 }
 #toggle:checked ~ label span::after{
-    height: 7%;
     transform: rotate(45deg);
 }
 .glass{
