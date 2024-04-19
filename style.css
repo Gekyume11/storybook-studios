@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     font-family: 'Montserrat', monospace, sans-serif;
 }
@@ -77,16 +77,15 @@ a{
 .toggle-btn::after{
     top: 16px;
     height: 9%;
-}
-#toggle:checked ~ label span::before{
+}   
+#toggle:checked ~ label span::before,#toggle:checked ~ label span::after{
     left: 19.5%;
     top: 45%;
     transform: rotate(-45deg);
 }
 #toggle:checked ~ label span::after{
+    height: 7%;
     transform: rotate(45deg);
-    top: 45%;
-    left: 19.5%;
 }
 .glass{
     background-color: rgba(0, 0, 0, .3);
