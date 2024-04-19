@@ -1,0 +1,171 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: 'Montserrat', monospace, sans-serif;
+}
+li{
+    list-style: none !important;
+}
+a{
+    text-decoration: none !important;
+}
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header label ul{
+    position: absolute;
+    width: 280px;
+    height: 100vh;
+    right: -100%;
+    top: 100%;
+    transition: .5s ease;
+    z-index: 1000;
+}
+#toggle:checked ~ label ul{
+    right: 0;
+}
+.header img, .footer img{
+    width: 150px;
+}
+.header ul li a, .socials li a{
+    position: relative;
+}
+.header ul li a::after, .socials li a::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: .3s ease;
+    border-radius: 10px;
+}
+.header ul li a:hover::after, .socials li a:hover::after{
+    width: 100%;
+}
+.header label ul li a{
+    font-size: clamp(1.25rem, 1.0625rem + 1.0714vw, 2rem);
+}
+.header label ul li a::after{
+    background-color: #111;
+}
+.toggle-btn{
+    cursor: pointer;
+    padding: 5px 15px;
+    position: relative;
+}
+.toggle-btn::after, .toggle-btn::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 7%;
+    width: 60%;
+    background-color: #111;
+    transition: .3s all ease;
+}
+.toggle-btn::after{
+    top: 16px;
+    height: 9%;
+}
+#toggle:checked ~ label span::before{
+    left: 19.5%;
+    top: 45%;
+    transform: rotate(-45deg);
+}
+#toggle:checked ~ label span::after{
+    transform: rotate(45deg);
+    top: 45%;
+    left: 19.5%;
+}
+.glass{
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+}
+.hero{
+    height: 100dvh;
+    position: relative;
+}
+.hero video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.content{
+    position: absolute;
+    bottom: 50px;
+}
+.content h1{
+    font-size: clamp(1.75rem, 1.4375rem + 1.7857vw, 3rem);
+}
+.content p{
+    max-width: 700px;
+}
+.content a{
+    background-color: #fff;
+    color: #111;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+.content a:hover{
+    background-color: #1e1e1e;
+    color: #fff;
+}
+.bg-black{
+    background: #000;
+}
+.text-content{
+    max-width: 1100px;
+}
+.text-content h1, .pioneers h1, .collabrator h1{
+    font-size: clamp(1.25rem, 0.8125rem + 2.5vw, 3rem);
+}
+.text-content p, .text-body p, .collabrator p{
+    font-size: clamp(0.875rem, 0.8438rem + 0.1786vw, 1rem);
+}
+.bg-parallax{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.astronaut{
+    background-image: url(https://assets-global.website-files.com/65a6502daa32b71080fc210a/65f97ac84f551949d138d69a_AstronautLab_About.webp);
+}
+.jungle{
+    background-image: url(https://assets-global.website-files.com/65a6502daa32b71080fc210a/65fab5d945dbf5d8e7409dd1_Jungle_About.webp);
+}
+.collabrator ul{
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.collabrator ul li, .footer p{
+    font-size: clamp(0.875rem, 0.8448rem + 0.1724vw, 1rem);
+}
+.cyberpunk{
+    background-image: url(https://assets-global.website-files.com/65a6502daa32b71080fc210a/65fab8c2154ecc79d47a8ade_cyberpunk_About-p-1600.webp);
+}
+.link-title{
+    font-size: clamp(0.5rem, 0.4698rem + 0.1724vw, 0.625rem);
+}
+.address, .socials li a, .copyright p, .copyright a{
+    font-size: clamp(0.75rem, 0.7198rem + 0.1724vw, 0.875rem);
+}
+.socials li a::after{
+    height: 1px !important;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
