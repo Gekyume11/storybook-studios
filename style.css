@@ -147,7 +147,6 @@ a{
     background-image: url(https://assets-global.website-files.com/65a6502daa32b71080fc210a/65fab5d945dbf5d8e7409dd1_Jungle_About.webp);
 }
 .collabrator ul{
-    flex-wrap: wrap;
     gap: 30px;
 }
 .collabrator ul li, .footer p{
