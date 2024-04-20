@@ -78,7 +78,7 @@ a{
     top: 16px;
 }   
 #toggle:checked ~ label span::before,#toggle:checked ~ label span::after{
-    left: 19.7%;
+    left: 19.9%;
     top: 45%;
     transform: rotate(-45deg);
 }
