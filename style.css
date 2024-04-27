@@ -22,7 +22,6 @@ a{
 }
 .header label ul{
     position: absolute;
-    width: 280px;
     height: 100vh;
     right: -100%;
     top: 100%;
