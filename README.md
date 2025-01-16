@@ -1,4 +1,4 @@
-https://github.com/Gekyume11/storybook-studios.git
+To Visit this project online click on this link : https://gekyume11.github.io/storybook-studios
 
 Overview:
 The main motive for making this project is to make a responsive website design using bootstrap but no additional media queries were used. (Not for font sizes too across various screen sizes) 
